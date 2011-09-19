@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block title %}Schedule{% endblock %}
+
+{% block content %}
+
+<h3>Work estimation per person per project</h3>
+<table>
+<tr>
+<th>Person + Project</th>
+<th>Days required</th>
+<th>Days spent</th>
+<th>Days remaining</th>
+<th>Hours required</th>
+<th>Hours spent</th>
+<th>Hours remaining</th>
+</tr>
+{% for name, data in person_project_times.items %}
+<tr class="{% cycle 'alternate_row' '' %}">
+	<td>{{ name }}</td>
+	<td>{{ data.days_required }}</td>
+	<td class="dull">{{ data.days_spent }}</td>
+	<td class="critical">{{ data.days_remaining }}</td>
+	<td class="dull">{{ data.hours_required }}</td>
+	<td class="dull">{{ data.hours_spent }}</td>
+	<td class="dull">{{ data.hours_remaining }}</td>
+</tr>
+{% endfor %}
+</table>
+
+
+<h3>Work estimation per person</h3>
+<table>
+<tr>
+<th>Person</th>
+<th>Days required</th>
+<th>Days spent</th>
+<th>Days remaining</th>
+<th>Hours required</th>
+<th>Hours spent</th>
+<th>Hours remaining</th>
+</tr>
+{% for name, data in person_times.items %}
+<tr class="{% cycle 'alternate_row' '' %}">
+	<td>{{ name }}</td>
+	<td>{{ data.days_required }}</td>
+	<td class="dull">{{ data.days_spent }}</td>
+	<td class="critical">{{ data.days_remaining }}</td>
+	<td class="dull">{{ data.hours_required }}</td>
+	<td class="dull">{{ data.hours_spent }}</td>
+	<td class="dull">{{ data.hours_remaining }}</td>
+</tr>
+{% endfor %}
+</table>
+
+
+<h3>Work estimation per project</h3>
+<table>
+<tr>
+<th>Project</th>
+<th>Days required</th>
+<th>Days spent</th>
+<th>Days remaining</th>
+<th>Hours required</th>
+<th>Hours spent</th>
+<th>Hours remaining</th>
+</tr>
+{% for name, data in project_times.items %}
+<tr class="{% cycle 'alternate_row' '' %}">
+	<td>{{ name }}</td>
+	<td>{{ data.days_required }}</td>
+	<td class="dull">{{ data.days_spent }}</td>
+	<td class="critical">{{ data.days_remaining }}</td>
+	<td class="dull">{{ data.hours_required }}</td>
+	<td class="dull">{{ data.hours_spent }}</td>
+	<td class="dull">{{ data.hours_remaining }}</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

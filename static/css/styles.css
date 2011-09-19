@@ -1,0 +1,111 @@
+body
+{
+    font-family: Georgia, serif;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4
+{
+    color: #333;
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+}
+
+h1 a, h2 a, h3 a, h4 a
+{
+    color: #111;
+    text-decoration: none;
+}
+
+h1
+{
+    font-size: 36px;
+    margin-top: 18px;
+    margin-bottom: .15em;
+}
+
+h2
+{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+h3
+{
+    color: #777;
+    font-size: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+td
+{
+    padding: .5em .5em .5em .5em;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+table
+{
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+}
+
+.content
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.alternate_row
+{
+    background-color: #eee;
+}
+
+.dull
+{
+    color: #aaa;
+}
+
+.critical
+{
+    color: #dd0000;
+}
+
+#header
+{
+	font-size: 0.8em;
+	color: #777;
+	margin-top: 10px;
+	font-family: Verdana, sans-serif;
+}
+
+#header a:visited, a
+{
+	color: #777;
+}
+
+#header a:hover
+{
+	color: #999;
+}
+
+#burndown_chart
+{
+	margin: 20px;
+}
+
+.highlight
+{
+	color: #700;
+}
+
+#due_date
+{
+	font-family: Helvetica, sans-serif;
+	font-size: 0.8em;
+	padding-left: 20px;
+}
