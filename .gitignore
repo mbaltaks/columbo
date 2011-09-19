@@ -1,0 +1,36 @@
+# ---------------
+# Mac OS X Finder
+.DS_Store
+
+
+# ---------------
+# Python
+*.pyc
+# allow for local stored secret settings like passwords
+secret_settings.py
+
+# App Engine SDK
+.gaedata/
+
+
+# ---------------
+# Other source repository archive directories (protects when importing)
+.hg
+.svn
+CVS
+# automatic backup files
+*.swp
+*~
+
+
+# ---------------
+# Django App Engine
+autoload
+dbindexer
+django
+djangoappengine
+djangotoolbox
+filetransfers
+mediagenerator
+_generated_media/
+_generated_media_names.py
